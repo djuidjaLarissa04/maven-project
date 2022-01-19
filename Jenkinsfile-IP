@@ -32,8 +32,7 @@ stage ('Deploy to Staging') {
 steps {
 deploy adapters: [tomcat8(credentialsId:
 '1c5ca2ab-4c39-4628-b5ad-6e4e80121022', path:'', url:
-"${params.TOMCAT_DEV_IP}")], contextPath: null, onFaillure:
-false, war: '**/*.war'
+"${params.TOMCAT_DEV_IP}")], contextPath: null, war: '**/*.war'
 }
 }
 
